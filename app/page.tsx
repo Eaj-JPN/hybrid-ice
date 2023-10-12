@@ -1,113 +1,359 @@
+'use client'
+
+import PageHeader from '@/components/PageHeader'
+import PageFooter from '@/components/PageFooter'
+import ScrollToTopButton from '@/components/ScrollToTopButton'
+
 import Image from 'next/image'
+import localFont from 'next/font/local'
+import Link from 'next/link'
+
+import Lenis from '@studio-freight/lenis'
+import { motion,useScroll, useTransform } from "framer-motion"
+import { useEffect, useRef } from 'react'
+
+const BlairM = localFont({src: '../fonts/BlairMedium.otf'})
+const BlairL = localFont({src: '../fonts/BlairLight.otf'})
 
 export default function Home() {
+
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  
+  const textY = useTransform(scrollYProgress, [0,1], ["0%", "150%"]);
+
+  useEffect ( () => {
+    const lenis = new Lenis()
+  
+    lenis.on('scroll', (e) => {
+      console.log(e)
+    })
+  
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+  
+    requestAnimationFrame(raf)
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+
+      {/* Landing Page */}
+      <section ref={ref} id='Landing' className='flex flex-col min-h-screen bg-no-repeat bg-cover bg-[url(/assets/heroBg.png)] overflow-hidden'>
+        <div className=' h-screen w-full bg-black bg-opacity-30'>
+          <PageHeader/>
+
+          <div className='flex h-screen items-center justify-center'>
+            <motion.div style={{ y: textY}} className='text-center text-white w-4/6 space-y-8'>
+              <div className={BlairM.className}><h1 className="text-6xl">
+                CUSTOMIZE YOUR OWN ICE 
+                WITH US
+              </h1></div>
+              <p className="text-l leading-loose tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sodales mi. Nullam pretium augue mollis ipsum pellentesque suscipit. Mauris sit amet eros quis erat volutpat tempus ut quis neque. Nullam euismod, ante ac sollicitudin lacinia, massa massa euismod felis,</p>
+              <a href="/about" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-yellow-700 rounded-lg hover:bg-yellow-800 focus:ring-4">
+                  Learn more
+              </a>            
+            </motion.div>
+          </div>
+
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* About Us */}
+      <section id='About' className='flex flex-col inset-0 h-fit min-h-screen bg-no-repeat bg-cover bg-[url(/assets/bg1.png)]'>
+      <div className='p-10 h-screen max-lg:w-1/2 lg:w-1/2 md:w-full sm:w-full absolute right-0'>
+            <div className='w-full mx-auto py-32 text-white'>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+              {/* Title */}
+              <div className={BlairL.className}><h1 className='font-bold text-6xl mb-10'>About Us</h1></div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+              {/* Descripton */}
+              <p className="text-l leading-loose tracking-wider mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sodales mi. Nullam pretium augue mollis ipsum pellentesque suscipit. Mauris sit amet eros quis erat volutpat tempus ut quis neque. Nullam euismod, ante ac sollicitudin lacinia, massa massa euismod felis, hendrerit fermentum risus nisl a orci.</p>
+              
+              <p className="text-l leading-loose tracking-wider mb-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sodales mi. Nullam pretium augue mollis ipsum pellentesque suscipit. Mauris sit amet eros quis erat volutpat tempus ut quis neque. Nullam euismod, ante ac sollicitudin lacinia, massa massa euismod felis,</p>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+              <div className={BlairM.className}><a href='/about' className='text-yellow-500 text-xl underline'>MORE ABOUT US</a></div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Our Products */}
+      <section id='Product' className='flex flex-col min-h-screen bg-gray-300 overflow-hidden'>
+      <div className='p-10 h-fit flex items-center text-center justify-center'>
+            <div className='w-full mx-auto space-y-10'>
+
+              {/* Title */}
+              <div className={BlairL.className}><h1 className='font-bold text-6xl text-black'>Our Products</h1></div>
+
+              {/* Descripton */}
+              <p className="text-l leading-loose tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sodales mi. Nullam pretium augue mollis ipsum pellentesque suscipit. Mauris sit amet eros quis erat volutpat tempus ut quis neque. Nullam euismod, ante ac sollicitudin lacinia, massa massa euismod felis,</p>
+              
+              {/* Images Grid*/}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-16 px-32">
+
+                {/* Image */}
+                <Link href={'/'} className="h-auto rounded space-y-5">
+                  <Image 
+                    className='rounded-lg object-cover hover:shadow-lg '
+                    src='/assets/ProductCube.png'
+                    width={1000}
+                    height={1000}
+                    alt=""
+                    />
+                  <div className={BlairL.className}><h1 className='font-bold text-3xl text-black'>Cube Ice</h1></div>
+                </Link>
+
+                {/* Image */}
+                <Link href={'/'} className="h-auto rounded space-y-5">
+                  <Image 
+                    className='rounded-lg object-cover hover:shadow-lg '
+                    src='/assets/ProductRect.png'
+                    width={1000}
+                    height={1000}
+                    alt=""
+                    />
+                  <div className={BlairL.className}><h1 className='font-bold text-3xl text-black'>Rectangle Ice</h1></div>
+                </Link>
+
+                {/* Image */}
+                <Link href={'/'} className="h-auto rounded space-y-5">
+                  <Image 
+                    className='rounded-lg object-cover hover:shadow-lg '
+                    src='/assets/ProductSphr.png'
+                    width={1000}
+                    height={1000}
+                    alt=""
+                    />
+                  <div className={BlairL.className}><h1 className='font-bold text-3xl text-black'>Sphere Ice</h1></div>
+                </Link>
+                  
+              </div>
+
+            </div>
+        </div>
+      </section>
+
+      {/* Customers */}
+      <section id='Customer' className='flex flex-col h-fit bg-no-repeat bg-cover bg-[url(/assets/bg2.png)]'>
+        <div className='p-10 h-fit flex items-center text-center justify-center'>
+            <div className='w-full mx-auto space-y-10'>
+
+              {/* Title */}
+              <div className={BlairL.className}><h1 className='font-bold text-6xl text-white'>Our Customers</h1></div>
+              
+              {/* Images Grid*/}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
+
+                {/* Image */}
+                <div className="h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Image 
+                      className='rounded-lg object-scale-down'
+                      src='/assets/customer01.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Image 
+                      className='rounded-lg object-scale-down'
+                      src='/assets/customer02.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+                
+                {/* Image */}
+                <div className="h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Image 
+                      className='rounded-lg object-scale-down'
+                      src='/assets/customer03.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+                
+                {/* Image */}
+                <div className="h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Image 
+                      className='rounded-lg object-scale-down'
+                      src='/assets/customer04.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+                
+                {/* Image */}
+                <div className="h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Image 
+                      className='rounded-lg object-scale-down'
+                      src='/assets/customer05.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+                
+                {/* Image */}
+                <div className="h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Image 
+                      className='rounded-lg object-scale-down'
+                      src='/assets/customer06.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+                
+                {/* Image */}
+                <div className="h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Image 
+                      className='rounded-lg object-scale-down'
+                      src='/assets/customer07.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+                
+                {/* Image */}
+                <div className="h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Image 
+                      className='rounded-lg object-scale-down'
+                      src='/assets/customer08.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section id='Gallery' className='flex flex-col min-h-screen bg-gray-300 overflow-hidden'>
+        <div className='p-10 h-fit flex items-center text-center justify-center'>
+            <div className='w-full mx-auto space-y-10'>
+
+              {/* Title */}
+              <div className={BlairL.className}><h1 className='font-bold text-6xl text-black'>Gallery</h1></div>
+              
+              {/* Images Grid*/}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-32">
+
+                {/* Image */}
+                <div className="h-auto max-w-full  hover:shadow-md">
+                    <Image 
+                      className='rounded-lg'
+                      src='/assets/image1.webp'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-auto max-w-full  hover:shadow-md">
+                    <Image 
+                      className='rounded-lg'
+                      src='/assets/image3.webp'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-auto max-w-full  hover:shadow-md">
+                    <Image 
+                      className='rounded-lg'
+                      src='/assets/image5.webp'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-auto max-w-full  hover:shadow-md">
+                    <Image 
+                      className='rounded-lg'
+                      src='/assets/image2.webp'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-auto max-w-full  hover:shadow-md">
+                    <Image 
+                      className='rounded-lg'
+                      src='/assets/image4.webp'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-auto max-w-full  hover:shadow-md">
+                    <Image 
+                      className='rounded-lg'
+                      src='/assets/image2.webp'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-auto max-w-full  hover:shadow-md">
+                    <Image 
+                      className='rounded-lg'
+                      src='/assets/image4.webp'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-auto max-w-full  hover:shadow-md">
+                    <Image 
+                      className='rounded-lg'
+                      src='/assets/image3.webp'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <PageFooter/>
+
+      <ScrollToTopButton/>
+
     </main>
   )
 }
