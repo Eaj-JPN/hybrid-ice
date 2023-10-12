@@ -1,3 +1,5 @@
+'use client'
+
 import PageFooter from '@/components/PageFooter'
 import PageHeader from '@/components/PageHeader'
 import React from 'react'
