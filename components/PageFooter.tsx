@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-scroll';
 import Image from 'next/image';
-import { BsFacebook } from 'react-icons/Bs';
-import { BsInstagram } from 'react-icons/Bs';
-import { BsTwitter } from 'react-icons/Bs';
+import { BsFacebook } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
+import { BsTwitter } from 'react-icons/bs';
 
 
 const PageFooter = () => {
