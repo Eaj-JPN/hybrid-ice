@@ -20,10 +20,29 @@ import { Button } from "@/components/ui/button"
 import { Textarea } from '@/components/ui/textarea'
 
 
+import Lenis from '@studio-freight/lenis'
+import { useEffect, useRef } from 'react'
+
 const BlairM = localFont({src: '../../fonts/BlairMedium.otf'})
 const BlairL = localFont({src: '../../fonts/BlairLight.otf'})
 
 const page = () => {
+
+  // Smooth Scrolling
+  useEffect ( () => {
+    const lenis = new Lenis()
+  
+    lenis.on('scroll', (e) => {
+      console.log(e)
+    })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+    }, []);
+  
   return (
 
     <main>
