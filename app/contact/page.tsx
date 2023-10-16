@@ -50,11 +50,15 @@ const page = () => {
             <PageHeader/>
         </div>
         
-        <section className='flex flex-col min-h-screen bg-gray-300 p-48'>
+        <section className='flex flex-col min-h-screen bg-gray-300 p-16 lg:p-48'>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-col-2 xl:grid-cols-2 grid-rows-1 gap-4">
               <div className=" text-gray-900 space-y-8 pb-12">
-                <h3 className='text-8xl'>Contact Us</h3>
-                <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero obcaecati at itaque voluptatum enim commodi. Provident eum nostrum nulla neque. Incidunt ducimus laboriosam voluptatibus expedita, temporibus earum laudantium quibusdam! </p>
+                <h3 className='text-4xl md:text-5xl lg:text-6xl'>
+                  Contact Us
+                </h3>
+                <p className='text-xs md:text-base lg:text-lg '>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero obcaecati at itaque voluptatum enim commodi. Provident eum nostrum nulla neque. Incidunt ducimus laboriosam voluptatibus expedita, temporibus earum laudantium quibusdam! 
+                </p>
               </div>
               <div className=" ">
                 <Card className="w-full bg-gray-900 text-white">

@@ -83,9 +83,10 @@ export default function Home() {
 
           {/* Title */}
           <div className={BlairL.className}>
-          <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-10'>
-            About Us
-          </h1></div>
+            <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-10'>
+              About Us
+            </h1>
+          </div>
 
           {/* Descripton */}
           <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider mb-8">
