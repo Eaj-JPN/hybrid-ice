@@ -26,7 +26,7 @@ const PageHeader = () => {
 
                 {/* Image Top Left */}
                 <div>
-                    <Link href='/' onClick={smallNavbar} className="flex items-center">
+                    <a href='/' onClick={smallNavbar} className="flex items-center">
                         <div className='w-24 md:w-32'>
                             <Image 
                                 src='/assets/LogoWhite.png'
@@ -34,7 +34,7 @@ const PageHeader = () => {
                                 width={750}
                                 height={500}/>
                         </div>
-                    </Link>
+                    </a>
                 </div>
 
                 {/* Big Screen Navbar */}
@@ -75,9 +75,9 @@ const PageHeader = () => {
                     </li>
 
                     <li className={BlairM.className}>
-                        <Link href="/contact" className="block py-2 pl-3 pr-4 text-white rounded hover:bg-opacity-30 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
+                        <a href="/contact" className="block py-2 pl-3 pr-4 text-white rounded hover:bg-opacity-30 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
                             CONTACT
-                        </Link>
+                        </a>
                     </li>
                 </ul>
 
@@ -136,9 +136,9 @@ const PageHeader = () => {
                             </li>
 
                             <li className={BlairM.className}>
-                                <Link onClick={smallNavbar} href="/contact" className="block py-2 pl-3 pr-4 text-white rounded hover:bg-opacity-30 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
+                                <a onClick={smallNavbar} href="/contact" className="block py-2 pl-3 pr-4 text-white rounded hover:bg-opacity-30 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
                                     CONTACT
-                                </Link>
+                                </a>
                             </li>
 
                         </ul>
