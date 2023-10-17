@@ -1,7 +1,6 @@
 'use client'
 
 import PageFooter from '@/components/PageFooter'
-import PageHeader from '@/components/PageHeader'
 import React from 'react'
 import localFont from 'next/font/local'
 import Image from 'next/image'
@@ -22,6 +21,7 @@ import { Textarea } from '@/components/ui/textarea'
 
 import Lenis from '@studio-freight/lenis'
 import { useEffect, useRef } from 'react'
+import PageHeaderAlt from '@/components/PageHeaderAlt'
 
 const BlairM = localFont({src: '../../fonts/BlairMedium.otf'})
 const BlairL = localFont({src: '../../fonts/BlairLight.otf'})
@@ -47,7 +47,7 @@ const page = () => {
 
     <main>
         <div className='bg-gray-900'>
-            <PageHeader/>
+            <PageHeaderAlt/>
         </div>
         
         <section className='flex flex-col min-h-screen bg-gray-300 p-16 lg:p-48'>

@@ -34,7 +34,7 @@ const ScrollToTopButton = () => {
     className={`fixed bottom-4 right-4 rounded-full p-2 outline-none transition-opacity bg-white duration-1000 ${
     isVisible ? "opacity-100" : "opacity-0"
     }`}>
-              
+      
     <ChevronUp />
     </Link>
   )
