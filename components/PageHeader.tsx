@@ -122,7 +122,7 @@ const PageHeader = () => {
                             </li>
 
                             <li className={BlairM.className}>
-                                <Link href="/" onClick={smallNavbar} activeClass="active" spy={true} to="Customer" smooth={true} offset={-150} duration={1000} 
+                                <Link href="/" onClick={smallNavbar} activeClass="active" spy={true} to="Customer" smooth={true} offset={0} duration={1000} 
                                 className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
                                     Customer
                                 </Link>

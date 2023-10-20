@@ -77,7 +77,7 @@ export default function Home() {
       </section>
 
       {/* About Us */}
-      <section id='About' className='flex flex-col min-h-screen h-fit bg-no-repeat bg-cover bg-[url(/assets/bg1.png)]'>
+      <section id='About' className='pt-16 flex flex-col min-h-screen h-fit bg-no-repeat bg-cover bg-[url(/assets/bg1.png)]'>
       <div className='p-10 h-full lg:w-1/2 absolute right-0'>
         <div className='w-full mx-auto py-32 text-white'>
 
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Our Products */}
-      <section id='Product' className='flex flex-col items-center justify-center min-h-screen h-fit bg-gray-300 overflow-hidden'>
+      <section id='Product' className='pt-16 flex flex-col items-center justify-center min-h-screen h-fit bg-gray-300 overflow-hidden'>
       <div className='p-10 h-fit flex items-center text-center justify-center'>
             <div className='w-full mx-auto space-y-10'>
 
@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* Customers */}
-      <section id='Customer' className='flex flex-col items-center justify-center min-h-screen h-fit bg-no-repeat bg-cover bg-[url(/assets/bg2.png)]'>
+      <section id='Customer' className='pt-16 flex flex-col items-center justify-center min-h-screen h-fit bg-no-repeat bg-cover bg-[url(/assets/bg2.png)]'>
         <div className='p-10 h-fit flex items-center text-center justify-center'>
             <div className='w-full mx-auto space-y-10'>
 
@@ -324,7 +324,7 @@ export default function Home() {
       </section>
 
       {/* Gallery */}
-      <section id='Gallery' className='flex flex-col items-center justify-center min-h-screen h-fit bg-gray-300 overflow-hidden'>
+      <section id='Gallery' className='pt-16 flex flex-col items-center justify-center min-h-screen h-fit bg-gray-300 overflow-hidden'>
         <div className='p-10 h-fit flex items-center text-center justify-center'>
             <div className='w-full mx-auto space-y-10'>
 
