@@ -94,12 +94,12 @@ const PageHeaderAlt = () => {
                 </div>
 
                 <div className={menuIcon ? 
-                    'md:hidden absolute z-10 top-[80px] right-0 bottom-0 left-0 flex justify-center items-center w-full h-fill bg-black bg-opacity-70 text-white ease-in duration-300' 
+                    'md:hidden absolute z-10 top-[80px] right-0 bottom-0 left-0 flex justify-center items-center w-full h-fill text-white ease-in duration-300' 
                     : 
-                    'md:hidden absolute z-10 top-[80px] right-0 left-[-100%] flex justify-center items-center w-full h-fill bg-black bg-opacity-70 text-white text-center ease-in duration-300'
+                    'md:hidden absolute z-10 top-[80px] right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-fill text-white text-center ease-in duration-300'
                 }>
                     {/* Links */}
-                    <div className='w-full'>
+                    <div className='w-full h-[853px] flex justify-center items-center bg-black bg-opacity-70'>
                        
                         <ul className='text-center py space-y-10'>
 
