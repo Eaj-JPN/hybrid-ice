@@ -63,7 +63,7 @@ const PageHeader = () => {
                     <li className={BlairM.className}>
                         <Link href="/" activeClass="active" spy={true} to="Customer" smooth={true} offset={0} duration={1000} 
                         className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
-                            Customer
+                            CUSTOMER
                         </Link>
                     </li>
 
@@ -124,7 +124,7 @@ const PageHeader = () => {
                             <li className={BlairM.className}>
                                 <Link href="/" onClick={smallNavbar} activeClass="active" spy={true} to="Customer" smooth={true} offset={0} duration={1000} 
                                 className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
-                                    Customer
+                                    CUSTOMER
                                 </Link>
                             </li>
 

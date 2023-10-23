@@ -63,7 +63,7 @@ export default function Home() {
               </div>
 
               <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sodales mi. Nullam pretium augue mollis ipsum pellentesque suscipit. Mauris sit amet eros quis erat volutpat tempus ut quis neque. Nullam euismod, ante ac sollicitudin lacinia, massa massa euismod felis
+                Hybrid ICE crafts high-quality, hand-cut, crystal-clear ice cubes. Our range includes cubes, rectangles, and bespoke shapes, ensuring your drinks stand out. Elevate your customer experience with us. 
               </p>
 
               <Link href="/about" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-yellow-700 rounded-lg hover:bg-yellow-800 focus:ring-4">
@@ -90,11 +90,11 @@ export default function Home() {
 
           {/* Descripton */}
           <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sodales mi. Nullam pretium augue mollis ipsum pellentesque suscipit. Mauris sit amet eros quis erat volutpat tempus ut quis neque. Nullam euismod, ante ac sollicitudin lacinia, massa massa euismod felis, hendrerit fermentum risus nisl a orci.
+            We focus on the provision of High-quality, Hand-cut, Clear ice, from Cube, Rectangular and Bespoken shapes.
           </p>
               
           <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider mb-16">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sodales mi. Nullam pretium augue mollis ipsum pellentesque suscipit. Mauris sit amet eros quis erat volutpat tempus ut quis neque. Nullam euismod, ante ac sollicitudin lacinia, massa massa euismod felis,
+            Our Goal is not only enable you to immediately differentiate your drinks, but also enhance your carefully curated customer experience.
           </p>
 
           <div className={BlairM.className}>
@@ -121,7 +121,7 @@ export default function Home() {
 
               {/* Descripton */}
               <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider px-10 lg:px-32">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sodales mi. Nullam pretium augue mollis ipsum pellentesque suscipit. Mauris sit amet eros quis erat volutpat tempus ut quis neque. Nullam euismod, ante ac sollicitudin lacinia, massa massa euismod felis
+                We offers meticulously hand-cut, premium clear ice in cube, rectangular, and custom shapes. Elevate your beverages with our high-quality, distinctive ice for an exceptional customer experience.
               </p>
               
               {/* Images Grid*/}

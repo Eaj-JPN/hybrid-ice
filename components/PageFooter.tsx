@@ -52,13 +52,13 @@ const PageFooter = () => {
                     <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                     <ul className="text-gray-500 dark:text-gray-400 font-medium">
                         <li className="mb-4">
-                            <a href="/" className="hover:underline">Facebook</a>
+                            <a href="#" className="hover:underline">Facebook</a>
                         </li>
                         <li className="mb-4">
-                            <a href="/" className="hover:underline">Twitter</a>
+                            <a href="#" className="hover:underline">Twitter</a>
                         </li>
                         <li className="mb-4">
-                            <a href="/" className="hover:underline">Instagram</a>
+                            <a href="https://www.instagram.com/hybridiceking/" className="hover:underline">Instagram</a>
                         </li>
                     </ul>
                 </div>
@@ -85,7 +85,7 @@ const PageFooter = () => {
                     <span className="sr-only">Facebook page</span>
                 </a>
                 
-                <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a href="https://www.instagram.com/hybridiceking/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <BsInstagram/>
                     <span className="sr-only">Instagram page</span>
                 </a>
