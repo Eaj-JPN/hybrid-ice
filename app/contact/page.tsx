@@ -72,7 +72,8 @@ const page = () => {
                   <CardHeader>
                     <CardTitle>Contact Us</CardTitle>
                     <CardDescription>
-                      Complete form with name, email, message for swift assistance. Thank you!                    </CardDescription>
+                      Complete form with name, email, message for swift assistance. Thank you!
+                    </CardDescription>
                   </CardHeader>
 
                   <CardContent className="space-y-2">
