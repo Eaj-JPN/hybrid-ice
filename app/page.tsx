@@ -56,13 +56,13 @@ export default function Home() {
             <motion.div style={{ y: textY}} className='text-center text-white w-4/6 space-y-8'>
 
               <div className={BlairM.className}>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="text-4xl lg:text-5xl">
                   CUSTOMIZE YOUR OWN ICE 
                   WITH US
                 </h1>
               </div>
 
-              <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider">
+              <p className="text-xs lg:text-lg leading-loose tracking-wider">
                 Hybrid ICE crafts high-quality, hand-cut, crystal-clear ice cubes. Our range includes cubes, rectangles, and bespoke shapes, ensuring your drinks stand out. Elevate your customer experience with us. 
               </p>
 
@@ -83,18 +83,18 @@ export default function Home() {
 
           {/* Title */}
           <div className={BlairL.className}>
-            <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-10'>
+            <h1 className='text-4xl lg:text-5xl font-bold mb-10'>
               About Us
             </h1>
           </div>
 
           {/* Descripton */}
-          <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider mb-8">
-            We focus on the provision of High-quality, Hand-cut, Clear ice, from Cube, Rectangular and Bespoken shapes.
+          <p className="text-xs lg:text-lg leading-loose tracking-wider mb-8">
+            We focus on the provision of High-quality, Hand-cut, Clear ice, from Cube, Rectangular and Bespoken shapes.Our Goal is not only enable you to immediately differentiate your drinks, but also enhance your carefully curated customer experience.
           </p>
-              
-          <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider mb-16">
-            Our Goal is not only enable you to immediately differentiate your drinks, but also enhance your carefully curated customer experience.
+
+          <p className="text-xs lg:text-lg leading-loose tracking-wider mb-8">
+          At Hybrid ICE, we're dedicated to redefining your beverage experience. Our artisanal, crystal-clear ice, available in various shapes, sets a new standard. Elevate your drinks and leave a lasting impression.
           </p>
 
           <div className={BlairM.className}>
@@ -114,13 +114,13 @@ export default function Home() {
 
               {/* Title */}
               <div className={BlairL.className}>
-                <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-black'>
+                <h1 className='text-4xl lg:text-5xl font-bold text-black'>
                   Our Products
                 </h1>
               </div>
 
               {/* Descripton */}
-              <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider px-10 lg:px-32">
+              <p className="text-xs lg:text-lg leading-loose tracking-wider px-10 lg:px-32">
                 We offers meticulously hand-cut, premium clear ice in cube, rectangular, and custom shapes. Elevate your beverages with our high-quality, distinctive ice for an exceptional customer experience.
               </p>
               
@@ -188,7 +188,7 @@ export default function Home() {
 
               {/* Title */}
               <div className={BlairL.className}>
-                <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-white'>
+                <h1 className='text-4xl lg:text-5xl font-bold text-white'>
                   Our Customers
                 </h1>
               </div>
@@ -330,7 +330,7 @@ export default function Home() {
 
               {/* Title */}
               <div className={BlairL.className}>
-                <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-black'>
+                <h1 className='text-4xl lg:text-5xl font-bold text-black'>
                   Gallery
                 </h1>
               </div>

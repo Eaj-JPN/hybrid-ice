@@ -45,13 +45,13 @@ const page = () => {
             <div className='text-center text-white w-4/6 space-y-8'>
 
               <div className={BlairM.className}>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="text-4xl lg:text-5xl">
                   CUSTOMIZE YOUR OWN ICE 
                   WITH US
                 </h1>
               </div>
 
-              <p className="text-xs md:text-base lg:text-lg leading-loose tracking-wider">
+              <p className="text-xs lg:text-lg leading-loose tracking-wider">
                 Hybrid ICE crafts high-quality, hand-cut, crystal-clear ice cubes. Our range includes cubes, rectangles, and bespoke shapes, ensuring your drinks stand out. Elevate your customer experience with us. 
               </p>
 

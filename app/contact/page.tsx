@@ -53,16 +53,16 @@ const page = () => {
         <section className='flex flex-col min-h-screen bg-gray-300 p-16 lg:p-48'>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-col-2 xl:grid-cols-2 grid-rows-1 gap-4">
               <div className=" text-gray-900 space-y-4 pb-12">
-                <h3 className='text-4xl md:text-5xl lg:text-6xl'>
+                <h3 className='text-4xl lg:text-5xl'>
                   Contact Us
                 </h3>
-                <p className='text-xs md:text-base lg:text-lg '>
+                <p className='text-xs lg:text-lg '>
                   Connect with us! Have questions, feedback, or inquiries? Reach out through our user-friendly contact form. We're here to assist you promptly and ensure your experience with us is seamless and satisfying.
                 </p>
-                <p className='text-xs md:text-base lg:text-lg inline-flex items-center'>
+                <p className='text-xs lg:text-lg inline-flex items-center'>
                   <BsWhatsapp/> &nbsp; +0812-1777-1930
                 </p>
-                <p className='text-xs md:text-base lg:text-lg flex items-center'>
+                <p className='text-xs lg:text-lg flex items-center'>
                   <BsInstagram/> &nbsp; @hybridiceking
                 </p>
                 
