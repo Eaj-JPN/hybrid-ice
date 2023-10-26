@@ -12,6 +12,8 @@ import { useEffect, useRef } from 'react'
 import PageHeader from '@/components/PageHeader'
 import PageFooter from '@/components/PageFooter'
 
+import {AiOutlineMore} from 'react-icons/ai';
+
 // Local Fonts
 const BlairM = localFont({src: '../fonts/BlairMedium.otf'})
 const BlairL = localFont({src: '../fonts/BlairLight.otf'})
@@ -197,10 +199,10 @@ export default function Home() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-8 ">
 
                 {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25 o">
                     <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer01.png'
+                    className='w-auto max-h-full'
+                      src='/assets/clientLogo/AA01.png'
                       width={1000}
                       height={1000}
                       alt=""
@@ -208,76 +210,10 @@ export default function Home() {
                 </div>
 
                 {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25 o">
                     <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer02.png'
-                      width={1000}
-                      height={1000}
-                      alt=""
-                      />
-                </div>
-                
-                {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
-                    <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer03.png'
-                      width={1000}
-                      height={1000}
-                      alt=""
-                      />
-                </div>
-                
-                {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
-                    <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer04.png'
-                      width={1000}
-                      height={1000}
-                      alt=""
-                      />
-                </div>
-                
-                {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
-                    <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer05.png'
-                      width={1000}
-                      height={1000}
-                      alt=""
-                      />
-                </div>
-                
-                {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
-                    <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer06.png'
-                      width={1000}
-                      height={1000}
-                      alt=""
-                      />
-                </div>
-                
-                {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
-                    <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer07.png'
-                      width={1000}
-                      height={1000}
-                      alt=""
-                      />
-                </div>
-                
-                {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
-                    <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer08.png'
+                    className='w-auto max-h-full'
+                      src='/assets/clientLogo/acta01.png'
                       width={1000}
                       height={1000}
                       alt=""
@@ -285,10 +221,10 @@ export default function Home() {
                 </div>
 
                 {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25 o">
                     <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer01.png'
+                    className='w-auto max-h-full'
+                      src='/assets/clientLogo/angelanddemon01.png'
                       width={1000}
                       height={1000}
                       alt=""
@@ -296,25 +232,57 @@ export default function Home() {
                 </div>
 
                 {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25 o">
                     <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer02.png'
+                    className='w-auto max-h-full'
+                      src='/assets/clientLogo/barcelona01.png'
                       width={1000}
                       height={1000}
                       alt=""
                       />
                 </div>
-                
+
                 {/* Image */}
-                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25 o">
                     <Image 
-                      className='rounded-lg object-scale-down'
-                      src='/assets/customer03.png'
+                    className='w-auto max-h-full'
+                      src='/assets/clientLogo/biko01.png'
                       width={1000}
                       height={1000}
                       alt=""
                       />
+                </div>
+
+                {/* Image */}
+                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25 o">
+                    <Image 
+                    className='w-auto max-h-full'
+                      src='/assets/clientLogo/blackpond01.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                {/* Image */}
+                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25 o">
+                    <Image 
+                    className='w-auto max-h-full'
+                      src='/assets/clientLogo/burabura01.png'
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      />
+                </div>
+
+                
+                {/* More Button */}
+                <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
+                    <Link href={'/customer'}>
+                      <div className='text-7xl text-white'>
+                      <AiOutlineMore/>
+                      </div>
+                    </Link>
                 </div>
 
               </div>
