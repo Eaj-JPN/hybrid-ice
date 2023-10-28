@@ -275,7 +275,6 @@ export default function Home() {
                       />
                 </div>
 
-                
                 {/* More Button */}
                 <div className="h-28 md:h-32 lg:h-40 max-w-full flex items-center justify-center hover:shadow-md rounded bg-gray-500 bg-opacity-25">
                     <Link href={'/customer'}>
