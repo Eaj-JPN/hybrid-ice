@@ -60,7 +60,7 @@ const page = () => {
               </p>
 
               <Link href="https://wa.me/+6281217771930" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-yellow-700 rounded-lg hover:bg-yellow-800 focus:ring-4">
-                  Learn more
+                  Contact Us
               </Link>         
 
             </div>
