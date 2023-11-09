@@ -50,14 +50,14 @@ const PageHeaderAlt = () => {
                     </li>
 
                     <li className={BlairM.className}>
-                        <Link href="/"
+                        <Link href="/about"
                         className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
                             ABOUT US
                         </Link>
                     </li>
 
                     <li className={BlairM.className}>
-                        <Link href="/"
+                        <Link href="/product"
                         className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
                             PRODUCTS
                         </Link>
@@ -111,14 +111,14 @@ const PageHeaderAlt = () => {
                             </li>
 
                             <li className={BlairM.className}>
-                                <Link href="/" onClick={smallNavbar}
+                                <Link href="/about" onClick={smallNavbar}
                                 className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
                                     ABOUT US
                                 </Link>
                             </li>
 
                             <li className={BlairM.className}>
-                                <Link href="/" onClick={smallNavbar}
+                                <Link href="/product" onClick={smallNavbar}
                                 className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">
                                     PRODUCTS
                                 </Link>

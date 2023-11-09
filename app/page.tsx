@@ -130,7 +130,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 px-10 lg:px-32">
 
                 {/* Image */}
-                <Link href={'/'} className="h-auto rounded space-y-5">
+                <Link href={'/product'} className="h-auto rounded space-y-5">
                   <Image 
                     className='rounded-lg object-cover hover:shadow-lg '
                     src='/assets/ProductCube.png'
@@ -146,7 +146,7 @@ export default function Home() {
                 </Link>
 
                 {/* Image */}
-                <Link href={'/'} className="h-auto rounded space-y-5">
+                <Link href={'/product'} className="h-auto rounded space-y-5">
                   <Image 
                     className='rounded-lg object-cover hover:shadow-lg '
                     src='/assets/ProductRect.png'
@@ -162,7 +162,7 @@ export default function Home() {
                 </Link>
 
                 {/* Image */}
-                <Link href={'/'} className="h-auto rounded space-y-5">
+                <Link href={'/product'} className="h-auto rounded space-y-5">
                   <Image 
                     className='rounded-lg object-cover hover:shadow-lg '
                     src='/assets/ProductSphr.png'
