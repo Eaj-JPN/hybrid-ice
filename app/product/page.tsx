@@ -69,34 +69,35 @@ useEffect ( () => {
                 </div>
 
                 {/* Product Grid */}
-                <div className="grid grid-cols-1 grid-rows-3 lg:grid-cols-2 lg:grid-rows-3 gap-x-16 gap-y-16 lg:gap-y-32">
+                <div className="grid grid-cols-1 grid-rows-3 gap-4">
+                    {/* Cube */}
+                    <div className='lg:flex gap-x-16 p-8'>
+                      {/* Image */}
+                      <div className='h-fit w-auto flex justify-center text-center items-center'>
+                      <Image 
+                        className=' rounded-lg object-cover hover:shadow-lg '
+                        src='/assets/ProductCube.png'
+                        width={1000}
+                        height={1000}
+                        alt=""
+                        />
+                      </div>
 
-                    {/* Image 1 */}
-                    <div className="flex justify-center">
-                        <Image 
-                            className='h-fit w-auto rounded-lg object-cover hover:shadow-lg '
-                            src='/assets/ProductCube.png'
-                            width={1000}
-                            height={1000}
-                            alt=""
-                            />
-                    </div>
-
-                    {/* Description 1 */}
-                    <div>
+                      {/* Description */}
+                      <div className='pt-4'>
                         <div className='text-black space-y-4'>
                             <div className={BlairL.className}>
-                                <h1 className='text-xl md:text-2xl lg:text-3xl font-bold pb-4'>
+                                <h1 className='text-3xl font-bold '>
                                     CUBE
                                 </h1>
                             </div>
-                            <p className='text-2xl font-bold'>
+                            <p className='text-xl font-bold'>
                                 RP. 6,500-
                             </p>
-                            <p>
+                            <p className='text-l'>
                             Maecenas et auctor magna. In porttitor sapien euismod ex lacinia imperdiet. Nullam tincidunt lobortis ante, non vehicula diam molestie a. Quisque semper sit amet quam blandit dignissim. Nam nec porta est. Nulla nunc nulla, ultricies eu urna non, tincidunt facilisis justo. Phasellus ut neque consequat ante faucibus posuere.
                             </p>
-                            <p className='text-2xl font-bold'>
+                            <p className='text-xl font-bold'>
                                 Sizes Available
                             </p>
                             <ul className='list-disc pl-8'>
@@ -108,34 +109,37 @@ useEffect ( () => {
                                 <li>4x4x4</li>
                             </ul>
                         </div>
-                    </div>
-                    
-                    {/* Image 2 */}
-                    <div className="flex justify-center">
-                        <Image 
-                            className='h-fit w-auto rounded-lg object-cover hover:shadow-lg '
-                            src='/assets/ProductRect.png'
-                            width={1000}
-                            height={1000}
-                            alt=""
-                            />
+                      </div>
                     </div>
 
-                    {/* Description 2 */}
-                    <div>
+                    {/* Rectangle */}
+                    <div className='lg:flex gap-x-16 p-8'>
+                      {/* Image */}
+                      <div className='h-fit w-auto flex justify-center text-center items-center'>
+                      <Image 
+                        className=' rounded-lg object-cover hover:shadow-lg '
+                        src='/assets/ProductRect.png'
+                        width={1000}
+                        height={1000}
+                        alt=""
+                        />
+                      </div>
+
+                      {/* Description */}
+                      <div className='pt-4'>
                         <div className='text-black space-y-4'>
                             <div className={BlairL.className}>
-                                <h1 className='text-xl md:text-2xl lg:text-3xl font-bold pb-4'>
+                                <h1 className='text-3xl font-bold '>
                                     Rectangle
                                 </h1>
                             </div>
-                            <p className='text-2xl font-bold'>
+                            <p className='text-xl font-bold'>
                                 RP. 6,500-
                             </p>
-                            <p>
+                            <p className='text-l'>
                             Maecenas et auctor magna. In porttitor sapien euismod ex lacinia imperdiet. Nullam tincidunt lobortis ante, non vehicula diam molestie a. Quisque semper sit amet quam blandit dignissim. Nam nec porta est. Nulla nunc nulla, ultricies eu urna non, tincidunt facilisis justo. Phasellus ut neque consequat ante faucibus posuere.
                             </p>
-                            <p className='text-2xl font-bold'>
+                            <p className='text-xl font-bold'>
                                 Sizes Available
                             </p>
                             <ul className='list-disc pl-8'>
@@ -147,34 +151,37 @@ useEffect ( () => {
                                 <li>4x4x4</li>
                             </ul>
                         </div>
+                      </div>
                     </div>
 
-                    {/* Image 3 */}
-                    <div className="flex justify-center">
-                        <Image 
-                            className='h-fit w-auto rounded-lg object-cover hover:shadow-lg '
-                            src='/assets/ProductSphr.png'
-                            width={1000}
-                            height={1000}
-                            alt=""
-                            />
-                    </div>
+                    {/* Sphere */}
+                    <div className='lg:flex gap-x-16 p-8'>
+                      {/* Image */}
+                      <div className='h-fit w-auto flex justify-center text-center items-center'>
+                      <Image 
+                        className=' rounded-lg object-cover hover:shadow-lg '
+                        src='/assets/ProductSphr.png'
+                        width={1000}
+                        height={1000}
+                        alt=""
+                        />
+                      </div>
 
-                    {/* Description 3 */}
-                    <div>
+                      {/* Description */}
+                      <div className='pt-4'>
                         <div className='text-black space-y-4'>
                             <div className={BlairL.className}>
-                                <h1 className='text-xl md:text-2xl lg:text-3xl font-bold pb-4'>
+                                <h1 className='text-3xl font-bold '>
                                     Sphere
                                 </h1>
                             </div>
-                            <p className='text-2xl font-bold'>
+                            <p className='text-xl font-bold'>
                                 RP. 6,500-
                             </p>
-                            <p>
+                            <p className='text-l'>
                             Maecenas et auctor magna. In porttitor sapien euismod ex lacinia imperdiet. Nullam tincidunt lobortis ante, non vehicula diam molestie a. Quisque semper sit amet quam blandit dignissim. Nam nec porta est. Nulla nunc nulla, ultricies eu urna non, tincidunt facilisis justo. Phasellus ut neque consequat ante faucibus posuere.
                             </p>
-                            <p className='text-2xl font-bold'>
+                            <p className='text-xl font-bold'>
                                 Sizes Available
                             </p>
                             <ul className='list-disc pl-8'>
@@ -186,9 +193,10 @@ useEffect ( () => {
                                 <li>4x4x4</li>
                             </ul>
                         </div>
+                      </div>
                     </div>
-                    
                 </div>
+
               </div>
           </div>
         </section>
