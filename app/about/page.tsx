@@ -8,7 +8,7 @@ import localFont from 'next/font/local'
 import Link from 'next/link'
 import Image from 'next/image'
 import Lenis from '@studio-freight/lenis'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import PageHeaderAlt from '@/components/PageHeaderAlt'
 
 
@@ -73,7 +73,7 @@ const page = () => {
 
         {/* Vision Mission */}
         <section className='pt-16 px-48 flex flex-col items-center justify-center min-h-screen h-fit bg-gray-300 overflow-hidden'>
-        <div className='p-10 h-fit flex items-center justify-center'>
+          <div className='p-10 h-fit flex items-center justify-center'>
               <div className='w-full mx-auto space-y-10'>
 
                 {/* Title */}
@@ -83,35 +83,40 @@ const page = () => {
                   </h1>
                 </div>
 
-                <div className="grid grid-cols-1 grid-rows-3 lg:grid-cols-2 lg:grid-rows-2 gap-4">
+                {/* Grid */}
+                <div className="grid grid-cols-1 grid-rows-2 lg:grid-cols-2 gap-4">
 
-                    <div>
+                    {/* Vision n Description */}
+                    <div >
+                      
                       <div className={BlairL.className}>
-                        <h1 className='text-4xl lg:text-5xl font-bold text-black pb-10'>
+                        <h1 className='text-4xl lg:text-5xl font-bold text-center lg:text-left text-black pb-10'>
                           VISION
                         </h1>
                       </div>
 
-                      <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum risus id mi volutpat fermentum. Vestibulum rhoncus orci eget mi pellentesque ultricies quis sed mi. In tristique feugiat massa ac sollicitudin. Aenean finibus facilisis rhoncus. Curabitur eget leo nec ligula accumsan faucibus. Praesent rhoncus id nunc sit amet hendrerit. Ut feugiat gravida sem, sed varius mi. Morbi eu urna ligula.
+                      <p className='text-center lg:text-left'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum risus id mi volutpat fermentum. Vestibulum rhoncus orci eget mi pellentesque ultricies quis sed mi. In tristique feugiat massa ac sollicitudin. Aenean finibus facilisis rhoncus. Curabitur eget leo nec ligula accumsan faucibus. Praesent rhoncus id nunc sit amet hendrerit. Ut feugiat gravida sem, sed varius mi. Morbi eu urna ligula.
                       </p>
-                    </div>
 
-                    <div className=" lg:col-start-1 lg:row-start-2">
+                    </div>
+                    
+                    {/* Mission n Description */}
+                    <div className='lg:col-start-1 lg:row-start-2'>
                       <div className={BlairL.className}>
-                        <h1 className='text-4xl lg:text-5xl font-bold text-black pb-10'>
-                          MISSION
+                        <h1 className='text-4xl lg:text-5xl font-bold text-center lg:text-left text-black pb-10'>
+                          Mission
                         </h1>
                       </div>
 
-                      <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum risus id mi volutpat fermentum. Vestibulum rhoncus orci eget mi pellentesque ultricies quis sed mi. In tristique feugiat massa ac sollicitudin. Aenean finibus facilisis rhoncus. Curabitur eget leo nec ligula accumsan faucibus. Praesent rhoncus id nunc sit amet hendrerit. Ut feugiat gravida sem, sed varius mi. Morbi eu urna ligula.
+                      <p className='text-center lg:text-left'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum risus id mi volutpat fermentum. Vestibulum rhoncus orci eget mi pellentesque ultricies quis sed mi. In tristique feugiat massa ac sollicitudin. Aenean finibus facilisis rhoncus. Curabitur eget leo nec ligula accumsan faucibus. Praesent rhoncus id nunc sit amet hendrerit. Ut feugiat gravida sem, sed varius mi. Morbi eu urna ligula.
                       </p>
                     </div>
 
-                    <div className="invisible lg:visible lg:row-span-2 lg:col-start-2 lg:row-start-1 flex justify-center">
+                    <div className='invisible lg:visible flex items-center justify-center lg:row-span-2 lg:col-start-2 lg:row-start-1'>
                       <Image 
-                        className='rounded w-2/3 h-auto'
+                        className='rounded w-4/5 h-auto'
                           src='/assets/cocktailTemp.jpg'
                           width={1000}
                           height={1000}
@@ -119,8 +124,6 @@ const page = () => {
                           />
                     </div>
                 </div>
-
-
 
               </div>
           </div>

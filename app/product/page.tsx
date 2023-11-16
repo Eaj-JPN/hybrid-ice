@@ -69,7 +69,7 @@ useEffect ( () => {
                 </div>
 
                 {/* Product Grid */}
-                <div className="grid grid-cols-2 grid-rows-3 gap-x-16 gap-y-32">
+                <div className="grid grid-cols-1 grid-rows-3 lg:grid-cols-2 lg:grid-rows-3 gap-x-16 gap-y-16 lg:gap-y-32">
 
                     {/* Image 1 */}
                     <div className="flex justify-center">
