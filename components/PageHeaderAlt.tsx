@@ -77,7 +77,7 @@ const PageHeaderAlt = () => {
 
           <li className={BlairM.className}>
             <Link
-              href="/"
+              href="/gallery"
               className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0"
             >
               GALLERY
@@ -155,7 +155,7 @@ const PageHeaderAlt = () => {
 
               <li className={BlairM.className}>
                 <Link
-                  href="/"
+                  href="/gallery"
                   onClick={smallNavbar}
                   className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:bg-opacity-30 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0"
                 >
