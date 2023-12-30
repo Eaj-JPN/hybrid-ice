@@ -248,6 +248,16 @@ const page = () => {
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
                 className="w-full h-auto rounded-lg"
+                src="/assets/clientLogo/izzy.jpg"
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </div>
+            {/* Customer */}
+            <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
+              <Image
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/kempinski01.png"
                 width={1000}
                 height={1000}
