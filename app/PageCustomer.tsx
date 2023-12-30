@@ -96,7 +96,7 @@ const PageCustomer = () => {
           </div>
           {/* More */}
           <Link
-            href={"/customer"}
+            href={"/gallery"}
             className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center"
           >
             <MoreVertical className="w-24 h-24 text-white" />
