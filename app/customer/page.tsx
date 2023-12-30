@@ -47,7 +47,17 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
+                src="/assets/clientLogo/2020.jpg"
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </div>
+            {/* Customer */}
+            <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
+              <Image
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/AA01.png"
                 width={1000}
                 height={1000}
@@ -57,7 +67,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/acta01.png"
                 width={1000}
                 height={1000}
@@ -67,7 +77,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/angelanddemon01.png"
                 width={1000}
                 height={1000}
@@ -77,7 +87,17 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
+                src="/assets/clientLogo/Barcadia.jpg"
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </div>
+            {/* Customer */}
+            <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
+              <Image
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/barcelona01.png"
                 width={1000}
                 height={1000}
@@ -87,7 +107,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/biko01.png"
                 width={1000}
                 height={1000}
@@ -97,7 +117,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/blackpond01.png"
                 width={1000}
                 height={1000}
@@ -107,7 +127,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/burabura01.png"
                 width={1000}
                 height={1000}
@@ -117,7 +137,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/cafekitsunne01.png"
                 width={1000}
                 height={1000}
@@ -127,7 +147,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/cantinero01.png"
                 width={1000}
                 height={1000}
@@ -137,7 +157,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/carrots01.png"
                 width={1000}
                 height={1000}
@@ -147,7 +167,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/casaalba01.png"
                 width={1000}
                 height={1000}
@@ -157,7 +177,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/contra01.png"
                 width={1000}
                 height={1000}
@@ -167,7 +187,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/dingdong01.png"
                 width={1000}
                 height={1000}
@@ -177,7 +197,27 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
+                src="/assets/clientLogo/foofoo.jpg"
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </div>
+            {/* Customer */}
+            <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
+              <Image
+                className="w-full h-auto rounded-lg"
+                src="/assets/clientLogo/GenbuPremiumKatsu.jpg"
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </div>
+            {/* Customer */}
+            <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
+              <Image
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/golddragon01.png"
                 width={1000}
                 height={1000}
@@ -187,7 +227,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/hause01.png"
                 width={1000}
                 height={1000}
@@ -197,7 +237,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/inferno01.png"
                 width={1000}
                 height={1000}
@@ -207,7 +247,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/kempinski01.png"
                 width={1000}
                 height={1000}
@@ -217,7 +257,17 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
+                src="/assets/clientLogo/Kisakukissaten.jpg"
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </div>
+            {/* Customer */}
+            <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
+              <Image
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/leon01.png"
                 width={1000}
                 height={1000}
@@ -227,7 +277,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/limelight01.png"
                 width={1000}
                 height={1000}
@@ -237,7 +287,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/mensa01.png"
                 width={1000}
                 height={1000}
@@ -247,7 +297,17 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
+                src="/assets/clientLogo/midaz.jpg"
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </div>
+            {/* Customer */}
+            <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
+              <Image
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/miglia01.png"
                 width={1000}
                 height={1000}
@@ -257,7 +317,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/mrfox01.png"
                 width={1000}
                 height={1000}
@@ -267,7 +327,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/nirwana01.png"
                 width={1000}
                 height={1000}
@@ -277,7 +337,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/nonnabona01.png"
                 width={1000}
                 height={1000}
@@ -287,7 +347,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/oku01.png"
                 width={1000}
                 height={1000}
@@ -297,7 +357,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/osteriagia01.png"
                 width={1000}
                 height={1000}
@@ -307,7 +367,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/phoenix01.png"
                 width={1000}
                 height={1000}
@@ -317,7 +377,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/potboyaru01.png"
                 width={1000}
                 height={1000}
@@ -327,7 +387,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/ristorantealba01.png"
                 width={1000}
                 height={1000}
@@ -337,7 +397,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/semaja01.png"
                 width={1000}
                 height={1000}
@@ -347,7 +407,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/skye01.png"
                 width={1000}
                 height={1000}
@@ -357,7 +417,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/socialgarden01.png"
                 width={1000}
                 height={1000}
@@ -367,7 +427,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/socialhouse01.png"
                 width={1000}
                 height={1000}
@@ -377,7 +437,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/sosogood01.png"
                 width={1000}
                 height={1000}
@@ -387,7 +447,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/spillstill01.png"
                 width={1000}
                 height={1000}
@@ -397,7 +457,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/stalk01.png"
                 width={1000}
                 height={1000}
@@ -407,7 +467,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/sudestada01.png"
                 width={1000}
                 height={1000}
@@ -417,7 +477,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/thegoldentooth01.png"
                 width={1000}
                 height={1000}
@@ -427,7 +487,17 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
+                src="/assets/clientLogo/underthearmpit.jpg"
+                width={1000}
+                height={1000}
+                alt=""
+              />
+            </div>
+            {/* Customer */}
+            <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
+              <Image
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/vol01.png"
                 width={1000}
                 height={1000}
@@ -437,7 +507,7 @@ const page = () => {
             {/* Customer */}
             <div className="bg-gray-500 bg-opacity-25 rounded-lg hover:shadow-xl w-40 h-40 lg:w-64 lg:h-64 flex items-center justify-center">
               <Image
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
                 src="/assets/clientLogo/zodiac01.png"
                 width={1000}
                 height={1000}
