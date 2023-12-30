@@ -90,11 +90,12 @@ const PageGallery = () => {
             />
           </div>
           {/* More */}
-          <div className="bg-gray-500 bg-opacity-25 hover:shadow-xl w-40 h-40 lg:w-72 lg:h-72 flex items-center justify-center">
-            <Link href={"/customer"}>
-              <MoreVertical className="w-24 h-24 text-white" />
-            </Link>
-          </div>
+          <Link
+            href={"/gallery"}
+            className="bg-gray-500 bg-opacity-25 hover:shadow-xl w-40 h-40 lg:w-72 lg:h-72 flex items-center justify-center"
+          >
+            <MoreVertical className="w-24 h-24 text-white" />
+          </Link>
         </div>
       </MaxWidthWrapper>
     </>
