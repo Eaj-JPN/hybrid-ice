@@ -32,13 +32,15 @@ const PageNavAlt = () => {
   return (
     <>
       <div className="absolute z-10 top-0 w-full h-24 bg-black bg-opacity-70 flex flex-row justify-between p-4">
-        <Image
-          src="/assets/LogoWhite.png"
-          width={1000}
-          height={1000}
-          alt="Logo"
-          className="w-auto h-16"
-        />
+        <Link href={"/"}>
+          <Image
+            src="/assets/LogoWhite.png"
+            width={1000}
+            height={1000}
+            alt="Logo"
+            className="w-auto h-16"
+          />
+        </Link>
         <div
           className={cn(
             BlairM.className,
